@@ -1,11 +1,10 @@
 import React from 'react';
-import './css/Frontpage.css';
-import './index.css';
+import '../css/Frontpage.css';
 import { ThemeProvider } from '@emotion/react';
-import theme from './theme';
-import Header from './Components/Header';
+import theme from '../theme';
+import Header from '../Components/Header';
 
-function App() {
+function Frontpage() {
     return (
         <ThemeProvider theme={theme}>
         <div className="grid grid-rows-layout h-screen">
@@ -20,7 +19,7 @@ function App() {
                 {/* Højre side til indhold */}
                 <div className="bg-gray-100 p-4">
                     <h2 className="text-2xl font-bold">Indhold</h2>
-                    <p>Her kan du tilføje andet indhold.</p>
+                    <p>Velkommen til Flemmings oversigt.</p>
                     {/* Tilføj mere indhold her */}
                 </div>
             </div>
@@ -29,4 +28,4 @@ function App() {
     );
 }
 
-export default App;
+export default Frontpage;

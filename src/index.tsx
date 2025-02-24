@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './Frontpage';
+import App from './Pages/Frontpage';
 import reportWebVitals from './reportWebVitals';
 import { Workbox } from 'workbox-window';
 
