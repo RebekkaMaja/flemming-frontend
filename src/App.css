@@ -3,7 +3,7 @@
 }
 
 .grid-rows-layout {
-  grid-template-rows: 20% 1fr; /* 20% til billedet og resten til indholdet */
+  grid-template-rows: 15% 1fr; /* 20% til billedet og resten til indholdet */
 }
 
 .grid-cols-layout {
