@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import '../css/Menu.css';
+import "../css/Components/menu.css";
 
 function Menu() {
     return (

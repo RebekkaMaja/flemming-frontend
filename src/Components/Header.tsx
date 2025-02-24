@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Menu from "./Menu"; // Korrekt import af Menu-komponenten
-import "../css/Header.css";
+import Menu from "./Menu";
+import "../css/Components/header.css";
 
 const Header: React.FC = () => {
   return (

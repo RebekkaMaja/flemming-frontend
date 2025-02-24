@@ -23,4 +23,8 @@ img {
   object-position: button; /* Justerer billedet, så bunden vises i headeren */
 }
 
-
+.welcome-text {
+  font-size: 2rem; /* Større skrift til velkomst */
+  color: black; /* Sørg for, at teksten er synlig */
+  margin-top: 4rem; /* Øg afstand fra headeren */
+}
