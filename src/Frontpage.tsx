@@ -1,27 +1,15 @@
 import React from 'react';
-import './App.css';
+import './css/Frontpage.css';
 import './index.css';
-import Menu from './Components/Menu'; // Importér Menu-komponenten
 import { ThemeProvider } from '@emotion/react';
 import theme from './theme';
+import Header from './Components/Header';
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
         <div className="grid grid-rows-layout h-screen">
-            {/* Top sektion med billede */}
-            <header className="row-span-1 relative">
-                <img
-                    src={`${process.env.PUBLIC_URL}/hedgehogs.jpg`}
-                    className="w-full h-full object-cover"
-                    alt="Animals"
-                />
-                <h2 className="text-overlay">My Pet</h2> {/* Tekst overlay */}
-            </header>
-
-            {/* Menu under header */}
-            <Menu /> {/* Tilføj Menu-komponenten her */}
-
+            <Header />          
             {/* Hovedindhold */}
             <div className="grid grid-cols-layout flex-1">
                 {/* Venstre side til navn */}

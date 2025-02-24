@@ -11,7 +11,7 @@
 
 .toolbar {
     display: flex;
-    justify-content: space-between; /* Fordeler knapperne */
+    justify-content: flex-end; /* Fordeler knapperne */
 }
 
 .button {

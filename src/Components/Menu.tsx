@@ -1,14 +1,14 @@
 import React from 'react';
 import { AppBar, Toolbar, Button } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import '../css/menu.css';
+import '../css/Menu.css';
 
 function Menu() {
     return (
         <Router>
             <div className="menu-container"> {/* Tilføj menu-container */}
                 <AppBar position="static" className="app-bar">
-                    <Toolbar>
+                    <Toolbar sx={{ justifyContent: 'flex-end' }}>
                         <Button color="inherit" component={Link} to="/vand-og-mad-skema">
                             Vand og mad skema
                         </Button>

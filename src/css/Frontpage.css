@@ -23,14 +23,4 @@ img {
   object-position: button; /* Justerer billedet, så bunden vises i headeren */
 }
 
-.text-overlay {
-  position: absolute; /* Gør teksten absolut positioneret */
-  top: 50%; /* Centrerer teksten vertikalt */
-  left: 20px; /* Placér teksten lidt til højre */
-  transform: translateY(-50%); /* Justerer teksten så den er præcist centreret */
-  color: white; /* Ændre farven på teksten til hvid for bedre kontrast */
-  font-size: 24px; /* Juster størrelsen på teksten */
-  font-weight: bold; /* Gør teksten fed */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Tilføjer skygge til teksten for bedre læsbarhed */
-}
 
