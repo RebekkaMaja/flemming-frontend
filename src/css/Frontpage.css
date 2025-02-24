@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+}
+
+.grid-rows-layout {
+  grid-template-rows: 15% 1fr; /* 20% til billedet og resten til indholdet */
+}
+
+.grid-cols-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* 1/4 til venstre, 3/4 til højre */
+}
+
+header {
+  position: relative; /* Gør headeren relativ, så vi kan positionere teksten i forhold til den */
+  height: 100%; /* Sørg for at headeren fylder hele sin tildelte højde */
+}
+
+img {
+  width: 100%; /* Billedet fylder hele bredden */
+  height: 100%; /* Billedet fylder hele højden af headeren */
+  object-fit: cover; /* Billedet skaleres for at dække området */
+  object-position: button; /* Justerer billedet, så bunden vises i headeren */
+}
+
+.welcome-text {
+  font-size: 2rem; /* Større skrift til velkomst */
+  color: black; /* Sørg for, at teksten er synlig */
+  margin-top: 4rem; /* Øg afstand fra headeren */
+}
