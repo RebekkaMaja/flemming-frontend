@@ -2,9 +2,12 @@ import React from 'react';
 import './App.css';
 import './index.css';
 import Menu from './Components/Menu'; // Importér Menu-komponenten
+import { ThemeProvider } from '@emotion/react';
+import theme from './theme';
 
 function App() {
     return (
+        <ThemeProvider theme={theme}>
         <div className="grid grid-rows-layout h-screen">
             {/* Top sektion med billede */}
             <header className="row-span-1 relative">
@@ -34,6 +37,7 @@ function App() {
                 </div>
             </div>
         </div>
+        </ThemeProvider>
     );
 }
 
