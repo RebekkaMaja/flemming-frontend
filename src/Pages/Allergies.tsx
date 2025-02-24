@@ -4,7 +4,7 @@ import { ThemeProvider } from '@emotion/react';
 import theme from '../theme';
 import Header from '../Components/Header';
 
-function Alligies() {
+function Allergies () {
     return (
         <ThemeProvider theme={theme}>
         <div className="grid grid-rows-layout h-screen">
@@ -28,4 +28,4 @@ function Alligies() {
     );
 }
 
-export default Alligies;
+export default Allergies;
