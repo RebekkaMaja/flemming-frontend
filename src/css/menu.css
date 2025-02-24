@@ -1,0 +1,19 @@
+.menu-container {
+    width: 100%; /* Sætter bredden til 100% */
+    height: 10%; /* Sætter højden til 5% */
+    background-color: #ffffff; /* Sætter baggrundsfarven til hvid */
+    margin: 0 auto; /* Centrerer menuen */
+}
+
+.app-bar {
+    background-color: #ffffff; /* Vælg en farve til AppBar */
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between; /* Fordeler knapperne */
+}
+
+.button {
+    color: black; /* Knappernes tekstfarve til sort */
+}
