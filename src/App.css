@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+.grid {
+  display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-rows-layout {
+  grid-template-rows: 20% 1fr; /* 20% til billedet og resten til indholdet */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-cols-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* 1/4 til venstre, 3/4 til højre */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+  position: relative; /* Gør headeren relativ, så vi kan positionere teksten i forhold til den */
+  height: 100%; /* Sørg for at headeren fylder hele sin tildelte højde */
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 100%; /* Billedet fylder hele bredden */
+  height: 100%; /* Billedet fylder hele højden af headeren */
+  object-fit: cover; /* Billedet skaleres for at dække området */
+  object-position: button; /* Justerer billedet, så bunden vises i headeren */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-overlay {
+  position: absolute; /* Gør teksten absolut positioneret */
+  top: 50%; /* Centrerer teksten vertikalt */
+  left: 20px; /* Placér teksten lidt til højre */
+  transform: translateY(-50%); /* Justerer teksten så den er præcist centreret */
+  color: white; /* Ændre farven på teksten til hvid for bedre kontrast */
+  font-size: 24px; /* Juster størrelsen på teksten */
+  font-weight: bold; /* Gør teksten fed */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Tilføjer skygge til teksten for bedre læsbarhed */
 }
